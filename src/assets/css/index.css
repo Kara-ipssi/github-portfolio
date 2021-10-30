@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000;
+  max-width: 100vw;
+  overflow: hidden;
+  color: var(--text-color);
+  max-width: 100vw;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root, html, body{
+    height: 100%;
+}
+
+div{
+    display: block;
+}
+
+:root {
+    --bg-color: #0a0a0a;
+    --text-color: #fff;
+    --blog-gray-color: #b4b4b4;
+    --background-image: linear-gradient(90deg,rgba(10,10,10,0.3),#0a0a0a),url(https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?q=80&w=1500);
+    --background-background: linear-gradient(0deg,#0a0a0a,rgba(10,10,10,0.6)),url(https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?q=80&w=1500) center center fixed;
+    --height: 50vh;
+}
+
+.search-form, .search-form__row{
+  display: flex;
+  justify-content: center;
+}
+
+.search-form{
+  max-width: 600px;
+  margin: 0 auto;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search-form .fa-github {
+  font-size: 140px;
+  margin-bottom: 40px;
+}
+
+.search-form__row--user{
+  position: relative;
+}
+
+.search-form__row{
+  width: 100%;
+}
+
+.search-form input[type=text]{
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #fff;
+  padding: 20px 50px;
+  outline: none;
+  font-size: 32px;
+  text-align: center;
+  color: #fff;
+}
+
+.search-form__row--user button {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  right: 0;
+  background: none;
+  border: none;
+  color: #c2c2c2;
+  font-size: 40px;
+  outline: none;
+  cursor: pointer;
+  transition: color .3s ease-in-out;
+}
+
+.search-form button i {
+  margin-left: 10px;
+}
+
+.search-form__row--repo{
+  margin-top: 30px;
+}
+.search-form .error{
+    margin-top: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
